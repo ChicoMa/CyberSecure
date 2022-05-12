@@ -119,8 +119,9 @@
         manipulation to
         trick a user into believing the interaction is with a trusted party. In the case of <span>phishing</span>, an
         email is sent
-        containing either a link installing malware, to a fake website, or a fraudulent attachment. PDF's are the most common type of attachment found in a phishing email (<a class="external-lnk" href="https://www.tessian.com/research/spear-phishing-threat-landscape/">2021 Tessian Report</a>).
-        <span><a href="malware-topic.html">malware</a></span>. Whereas phishing encompasses
+        containing either a link installing <span><a href="malware-topic.html">malware</a></span>, to a fake website, or a fraudulent attachment. PDF's are the most
+        common type of attachment found in a phishing email (<a class="external-lnk"
+          href="https://www.tessian.com/research/spear-phishing-threat-landscape/">2021 Tessian Report</a>). Whereas phishing encompasses
         the broad approach of bulk emails sent to a series of contacts, <span>spear phishing</span> is personalised and
         targets an individual or organisation. Although typically conducted via emails, phishing can also happen through
         other communcation mediums like SMS messages (<span>Smishing</span>)
@@ -168,7 +169,9 @@
       <div style="color:grey;"> <small>Last updated 07/04/2022 </small></div>
       <br>
       Phishing emails are increasingly being used and falling for one can have some large affects including loss of
-      data, loss of money and device infection. Financial services firms are the most targeted for Phishing emails (<a class="external-lnk" href="https://www.tessian.com/research/spear-phishing-threat-landscape/">2021 Tessian Report</a>).
+      data, loss of money and device infection. Financial services firms are the most targeted for Phishing emails (<a
+        class="external-lnk" href="https://www.tessian.com/research/spear-phishing-threat-landscape/">2021 Tessian
+        Report</a>).
       <br>
       <br>
       <h5> <b>Most Recent</b></h5>
@@ -252,21 +255,34 @@
     crossorigin="anonymous"></script>
   <script>
     $(document).ready(function () {
+      $("a").click(function () {
+        if (window.speechSynthesis.speaking == true) {
+          window.speechSynthesis.cancel();
+        }
+      });
       $("#btn-speak1").click(function () {
         if ('speechSynthesis' in window) {
-          var msg = new SpeechSynthesisUtterance(document.querySelector('#phishing-def').textContent);
-          msg.rate = 0.9;
-          window.speechSynthesis.speak(msg);
+          if (window.speechSynthesis.speaking == true) {
+            window.speechSynthesis.cancel();
+          } else {
+            var msg = new SpeechSynthesisUtterance(document.querySelector('#phishing-def').textContent);
+            msg.rate = 0.9;
+            window.speechSynthesis.speak(msg);
+          }
         } else {
           alert("Your browser doesn't support text to speech")
         }
       });
       $("#btn-speak2").click(function () {
         if ('speechSynthesis' in window) {
-          var msg = new SpeechSynthesisUtterance(document.querySelector('#phishing-spot').textContent);
-          msg.rate = 0.9;
-          window.speechSynthesis.speak(msg);
+          if (window.speechSynthesis.speaking == true) {
+            window.speechSynthesis.cancel();
+          } else {
+            var msg = new SpeechSynthesisUtterance(document.querySelector('#phishing-spot').textContent);
+            msg.rate = 0.9;
+            window.speechSynthesis.speak(msg);
 
+          }
         } else {
           alert("Your browser doesn't support text to speech")
         }
