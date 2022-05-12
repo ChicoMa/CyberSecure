@@ -1,0 +1,392 @@
+ ::selection {
+     color: black;
+     background: #007bff;
+ }
+
+
+ .quiz-box,
+ .result-box {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+         0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ .rules.activeInfo,
+ .quiz-box.activeQuiz,
+ .result-box.activeResult {
+     opacity: 1;
+     z-index: 5;
+     pointer-events: auto;
+     transform: translate(-50%, -50%) scale(1);
+ }
+
+
+ .quiz-box {
+     display: none;
+     width: 700px;
+     background: #fff;
+     border-radius: 5px;
+     transform: translate(-50%, -50%) scale(0.9);
+     transition: all 0.3s ease;
+ }
+
+ .quiz-box header {
+     position: relative;
+     z-index: 2;
+     height: 70px;
+     padding: 0 30px;
+     background: #fff;
+     border-radius: 5px 5px 0 0;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+ }
+
+ .quiz-box header .title {
+     font-size: 20px;
+     font-weight: 600;
+ }
+
+ .quiz-box header .timer {
+     color: #004085;
+     background: #cce5ff;
+     border: 1px solid #b8daff;
+     height: 45px;
+     padding: 0 8px;
+     border-radius: 5px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 145px;
+ }
+
+ .quiz-box header .timer .time-left-txt {
+     font-weight: 400;
+     font-size: 17px;
+     user-select: none;
+ }
+
+ .quiz-box header .timer .timer-sec {
+     font-size: 18px;
+     font-weight: 500;
+     height: 30px;
+     width: 45px;
+     color: black;
+     border-radius: 5px;
+     line-height: 30px;
+     text-align: center;
+     background: #343a40;
+     border: 1px solid #343a40;
+     user-select: none;
+ }
+
+ .quiz-box header .time-line {
+     position: absolute;
+     bottom: 0px;
+     left: 0px;
+     height: 3px;
+     background: #007bff;
+ }
+
+ section {
+     padding: 25px 30px 20px 30px;
+     background: #fff;
+ }
+
+ section .que-text {
+     font-size: 25px;
+     font-weight: 600;
+ }
+
+ section .option-list {
+     padding: 20px 0px;
+     display: block;
+ }
+
+ section .option-list .option {
+     background: aliceblue;
+     border: 1px solid #84c5fe;
+     border-radius: 5px;
+     padding: 8px 15px;
+     font-size: 17px;
+     margin-bottom: 15px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ section .option-list .option:last-child {
+     margin-bottom: 0px;
+ }
+
+ section .option-list .option:hover {
+     color: #004085;
+     background: #cce5ff;
+     border: 1px solid #b8daff;
+ }
+
+ section .option-list .option.correct {
+     color: #155724;
+     background: #d4edda;
+     border: 1px solid #c3e6cb;
+ }
+
+ section .option-list .option.incorrect {
+     color: #721c24;
+     background: #f8d7da;
+     border: 1px solid #f5c6cb;
+ }
+
+ section .option-list .option.disabled {
+     pointer-events: none;
+ }
+
+ section .option-list .option .icon {
+     height: 40px;
+     width: 40px;
+     text-align: center;
+     font-size: 30px;
+     pointer-events: none;
+     transition: all 0.3s ease;
+     line-height: 24px;
+ }
+
+ .option-list .option .icon.tick {
+     color: #23903c;
+     border-color: #23903c;
+     background: #d4edda;
+ }
+
+ .option-list .option .icon.cross {
+     color: #a42834;
+     background: #f8d7da;
+     border-color: #a42834;
+ }
+
+ .result-box {
+     background: #fff;
+     border-radius: 5px;
+     display: flex;
+     padding: 25px 30px;
+     width: 450px;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     transform: translate(-50%, -50%) scale(0.9);
+     opacity: 0;
+     pointer-events: none;
+     transition: all 0.3s ease;
+ }
+
+ .result-box .icon {
+     font-size: 100px;
+     color: #007bff;
+     margin-bottom: 10px;
+ }
+
+ .result-box .complete-txt {
+     font-size: 20px;
+     font-weight: 500;
+ }
+
+ .result-box .score-text span {
+     display: flex;
+     margin: 10px 0;
+     font-size: 18px;
+     font-weight: 500;
+ }
+
+ .result-box .score-text span p {
+     padding: 0 4px;
+     font-weight: 600;
+ }
+
+ * {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+ }
+
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .navbar ul {
+     display: inline-flex;
+     list-style: none;
+     color: black;
+ }
+
+ .navbar ul li a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .navbar ul li:hover {
+     background-color: #a4cff8;
+     border-radius: 3px;
+ }
+
+ .navbar ul li:first-child:hover {
+     background-color: transparent;
+ }
+
+ .heading {
+     background-color: #dce7fa;
+ }
+
+ .dropdown-content-1,
+ .dropdown-content-2 {
+     display: none;
+     position: absolute;
+     background-color: #a4cff8;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px #a4cff8;
+     z-index: 1;
+     text-align: right;
+ }
+
+ .dropdown-1,
+ .dropdown-2 {
+     width: 90px;
+     display: inline-block;
+     text-align: right;
+     padding: 10px 0px;
+ }
+
+ .navbar ul li:hover .dropdown-content-1 {
+     display: block;
+     position: absolute;
+     background-color: #a4cff8;
+ }
+
+ .navbar ul li:hover .dropdown-content-2 {
+     display: block;
+     position: absolute;
+     background-color: #a4cff8;
+ }
+
+ .navbar ul li:hover .dropdown-content-2 ul {
+     display: block;
+ }
+
+ .navbar ul li:hover .dropdown-content-1 ul {
+     display: block;
+ }
+
+ .navbar ul li:hover .dropdown-content-1 ul li,
+ .navbar ul li:hover .dropdown-content-2 ul li {
+     width: 70px;
+     padding: 10px 0px;
+     border-bottom: 1px solid;
+     background: transparent;
+     border-radius: 0;
+     text-align: center;
+     align-items: center;
+ }
+
+ .navbar ul li:hover .dropdown-content-1 ul li :last-child,
+ .navbar ul li:hover .dropdown-content-2 ul li :last-child {
+     border-bottom: none;
+ }
+
+ #language {
+     text-align: right;
+     padding: 0px 10px;
+ }
+
+ h2,
+ h1 {
+     text-align: center;
+ }
+
+ #phishing-button {
+     border: none;
+     background-color: rgb(16, 57, 118);
+ }
+
+ #dos-button {
+     border: none;
+     background-color: rgb(72, 181, 239);
+ }
+
+ .icon {
+     padding: 5px 5px 0px 0px;
+ }
+
+ .navbar .bi {
+     padding: 0px 10px 0px 0px;
+ }
+
+ .icon-img {
+     float: left;
+ }
+
+ .rules-box {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 540px;
+     background: white;
+     border-radius: 5px;
+     border: 3px solid lightgrey;
+     padding: 5px;
+ }
+
+ .rules-box .rules-title {
+     height: 60px;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 0 35px;
+     font-size: 20px;
+     font-weight: 600;
+ }
+
+ .rules-box .btn-cont,
+ .next-btn,
+ .buttons button {
+     margin: 10px;
+     border-top: 1px solid lightgrey;
+     background: rgb(72, 181, 239);
+     color: black;
+     border: 1px solid rgb(72, 181, 239);
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ .rules-box .btn-cont,
+ .next-btn {
+     height: 40px;
+     width: 120px;
+     float: right;
+     padding: 0 10px;
+ }
+
+ .buttons button {
+     height: 60px;
+     width: 120px;
+     padding: 5px;
+     display:flex;
+     align-items: center;
+ }
+
+ .btn-cont:hover,
+ .next-btn:hover,
+ .buttons button:hover {
+     color: rgb(72, 181, 239);
+     background: white;
+     border: 1px solid rgb(72, 181, 239);
+ }
+
+ .rules-box span {
+     color: rgb(72, 181, 239);
+ }
