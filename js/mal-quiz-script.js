@@ -32,24 +32,24 @@ var questions = [{
         opt: ["True", "False"]
         },
         {no: 6,
-        ques:"There has been a increase in the number of phishing emails recieved over the years",
+        ques:"There has been an increase in the number of Phishing emails recieved over the years",
         ans:"True",
         opt: ["True","False"]
         },
         {
             no: 7,
-            ques:"Phishing attacks are most prevelant in which sectors?<",
-            ans:"All of the above",
-            opt: ["Financial","Healthcare Services","Retail","All of the above"]
+            ques:"Phishing attacks are most prevelant in which sector?",
+            ans:"Financial",
+            opt: ["Financial","Healthcare Services","Retail","TV and Broadcasting"]
         },
         {
             no: 8,
-            ques:"All phishing emails are clearly detectable?",
+            ques:"All Phishing emails are clearly detectable?",
             ans:"False",
-            opt: ["True","Flase"]
+            opt: ["True","False"]
         },
         {no: 9,
-            ques:"Why is it important to teach topic such as Phishing?",
+            ques:"Why is it important to teach topics such as Phishing?",
             ans:"All of the above.",
             opt: ["Equip people with knowledge to detect phishing email.","Prevent loss of sensitive information.",
             "Prevent loss of money and assets.","All of the above." ]
