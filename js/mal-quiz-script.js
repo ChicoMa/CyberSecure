@@ -1,6 +1,6 @@
 var questions = [{ 
     no: 1, 
-    ques: "Which could be an example of spear phishing?",
+    ques: "Which could be an example of 'Spear Phishing'?",
     ans: "A Business Email Compromise (BEC) where a phishing email is directly sent to a targeted CEO to enable attacker to hijack their account.",
     opt: [ "A generic phishing email sent to a list of random contacts with the hope of one passing through.",
        "A phishing email directing those who click on the attached link to a website on spears.",
