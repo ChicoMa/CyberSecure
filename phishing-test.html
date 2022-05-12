@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>CyberSecure - Phishing Test</title>
+</head>
+
+<body>
+    <div class="cont">
+        <h6 id="language"> English </h6>
+        <div class="navbar">
+            <ul>
+                <li class="icon-img"><a href="home.html"
+                        class="d-flex align-items-center text-dark text-decoration-none">
+                        <img class="icon" src="images/CyberSecure_icon2.png" alt="CyberSecure Icon" width="50"
+                            height="50" padding="50px"><span class="fs-4"> CyberSecure </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="rules-box" id="rules-box">
+        <div class="rules-title">
+            Quiz Rules
+        </div>
+        <hr>
+        <div class="rules">
+            <ol>
+                <li><span>15 seconds</span> are allocated to answer each question.</li>
+                <br>
+                <li>This quiz has <span>9 questions</span> and should take no more than <span>2.5 minutes</span> to
+                    complete.</li>
+                <br>
+                <li>Once an answer is selected, it is not possible to reselect or go back to a question.</li>
+            </ol>
+            <button class="btn-cont" id="btn-cont"> Continue <i class="bi bi-forward"></i></button>
+        </div>
+    </div>
+
+    <div class="quiz-box">
+        <header>
+            <div class="title"> Phishing Quiz </div>
+            <div class="timer">
+                <div class="time-left-txt"> Time Left</div>
+                <div class="time-sec"> </div>
+            </div>
+            <div class="time-line"></div>
+        </header>
+        <section>
+            <div class="que-text" id="que-text">
+                <span></span>
+            </div>
+            <div class="option-list">
+        </section>
+        <footer>
+            <div class="total-que">
+                <span>
+                </span>
+            </div>
+            <button id="next-btn" class="next-btn"> Next <i class="bi bi-forward"></i></button>
+        </footer>
+    </div>
+
+    <div id="result-box" class="result-box">
+        <div class="icon">
+            <i class="bi bi-trophy"></i>
+        </div>
+        <div class="complete-txt">Quiz Finished</div>
+        <div class="score-text">
+        </div>
+        <div class="buttons">
+            <button class="restart-btn" onClick="location.href='phishing-test.html'">Replay<i
+                    class="bi bi-arrow-clockwise"></i></button>
+            <button class="home-btn" onClick="location.href='home.html'"> Quit <i class="bi bi-house-door"></i></button>
+            <button class="move-on-btn" onClick="location.href='survey.html'"> Move onto Survey <i
+                    class="bi bi-forward"></i></button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="js/phish-quiz-script.js"></script>
+
+</body>
+
+</html>

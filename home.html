@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <title>CyberSecure - Home</title>
+</head>
+
+<body>
+  <!-- Pop Up -->
+  <div class="instr-box" id="instr-box">
+    <div class="instr-title">
+      Website Information
+    </div>
+    <hr>
+    <div class="instr">
+      <b>Disclaimer:</b>
+      <br>
+      Thank you for your participation.
+      <br>
+      This website forms a dissertation section which aims to explore the teaching of cybersecurity.
+      <br>
+      <br>
+      There are <span>three parts</span> to this website;
+      <br>
+      <b>1.</b> An informative page explaining a cybersecurity topic
+      <br>
+      <b>2.</b> A corresponding quiz on the information displayed
+      <br>
+      <b>3.</b> A survey which evaluates your experience with the website
+      <br>
+      <br>
+      There are two topics explained and tested in this website, Phishing and Malware. 
+      You only need to cover one of these topics to move onto the survey.
+      <br>
+      <small>Note: Denial of Service has not yet been implemented </small>
+      <hr>
+      Please dedicate <span>10 minutes</span> to complete this.
+      <br>
+      <button class="accept-btn" id="accept-btn">Accept<i class="bi bi-check"></i></button>
+    </div>
+  </div>
+
+  <div class="home-page" id="home-page">
+    <div class="cont">
+      <h6 id="language"> English </h6>
+      <div class="navbar">
+        <ul>
+          <!-- d-flex align-items-center text-dark text-decoration-none -->
+          <li class="icon-img"><a href="home.html" class="d-flex align-items-center text-dark text-decoration-none">
+              <img class="icon" src="images/CyberSecure_icon.png" alt="CyberSecure Icon" width="50" height="50"
+                padding="50px"><span class="fs-4"> CyberSecure </span>
+            </a>
+          </li>
+          <!-- <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto"> -->
+            <li class="dropdown-1"> <a href="#"><i class="bi bi-book"></i>Topics
+              </a>
+              <div class="dropdown-content-1">
+                <ul>
+                  <li><a href="phishing-topic.html">Phishing</a></li>
+                  <li><a href="malware-topic.html">Malware</a></li>
+                  <li><a href="#dos">Denial of Service</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown-2"> <a href="#"><i class="bi bi-card-checklist"></i>Tests
+              </a>
+              <div class="dropdown-content-2">
+                <ul>
+                  <li><a href="phishing-test.html">Phishing</a></li>
+                  <li><a href="malware-test.html">Malware</a></li>
+                  <li><a href="#dos-test">Denial of Service</a></li>
+                </ul>
+              </div>
+            </li>
+      </div>
+      <!-- </nav> -->
+    </div>
+    <div class="heading">
+      <br>
+      <h2>A collection of stories teaching you how to be </h2>
+      <h1> <b>CyberSecure </b> </h1>
+      <br>
+      <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title topic-card-title">Phishing</h4>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="phishing-btn" class="w-100 btn btn-lg btn-primary"
+              onClick="location.href='phishing-topic.html'"> Learn More</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title topic-card-title">Malware</h4>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="malware-button" class="w-100 btn btn-lg btn-primary"
+            onClick="location.href='malware-topic.html'">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title topic-card-title">Denial of Service (DoS)</h4>
+            <br>
+            <h6>Not Yet Implemented</h6>
+            <br>
+            <button type="button" id="dos-button" class="w-100 btn btn-lg btn-primary">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $("#accept-btn").click(function () {
+        $("#instr-box").remove();
+        $("#home-page").show();
+      });
+    });
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/topic.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <title>CyberSecure - Phishing</title>
+</head>
+
+<body>
+  <div class="cont">
+    <h6 id="language"> English </h6>
+    <div class="navbar">
+      <ul>
+        <li class="icon-img"><a href="#home" class="d-flex align-items-center text-dark text-decoration-none">
+            <img class="icon" src="images/CyberSecure_icon2.png" alt="CyberSecure Icon" width="50" height="50"
+              padding="50px"><span class="fs-4"> CyberSecure </span>
+          </a>
+        </li>
+        <li class="dropdown-1"> <a href="#"><i class="bi bi-book"></i>Topics
+          </a>
+          <div class="dropdown-content-1">
+            <ul>
+              <li><a href="phishing-topic.html">Phishing</a></li>
+              <li><a href="malware-topic.html">Malware</a></li>
+              <li><a href="#dos">Denial of Service</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="dropdown-2"> <a href="#"><i class="bi bi-card-checklist"></i>Tests
+          </a>
+          <div class="dropdown-content-2">
+            <ul>
+              <li><a href="phishing-test.html">Phishing</a></li>
+              <li><a href="malware-test.html">Malware</a></li>
+              <li><a href="#dos-test">Denial of Service</a></li>
+            </ul>
+          </div>
+        </li>
+    </div>
+  </div>
+  <hr>
+  <!-- Side Bar -->
+  <div class="sidebar" id="sidebar">
+    <div class="head"> <b>Table of Contents </b></div>
+    <!-- <hr> -->
+    <ul class="sections">
+      <li><a href="#phishing-def">
+          <p>What is Phishing?</p>
+        </a></li>
+      <li><a href="#phishing-spot">
+          <p>How Can You Spot a Phishing Email?</p>
+        </a></li>
+      <li><a href="#phishing-his">
+          <p>A History of Attacks</p>
+        </a></li>
+      <li><a href="#phishing-test">
+          <p>Test</p>
+        </a></li>
+    </ul>
+  </div>
+  <div class="phishing-info">
+    <h3 style="text-align:center">Phishing</h3>
+    <h6 class="time" style="text-align:center">5 minutes</h6>
+    <br>
+    <div class="phishing-story">
+      <div class="slideshow fade">
+        <div class="notxt">1 / 6</div>
+        <img src="images/Story1.png" style="width:90%">
+      </div>
+      <div class="slideshow fade">
+        <div class="notxt">2 / 6</div>
+        <img src="images/Story2.png" style="width:90%">
+      </div>
+      <div class="slideshow fade">
+        <div class="notxt">3 / 6</div>
+        <img src="images/Story3.png" style="width:90%">
+      </div>
+      <div class="slideshow fade">
+        <div class="notxt">4 / 6</div>
+        <img src="images/Story4.png" style="width:90%">
+      </div>
+      <div class="slideshow fade">
+        <div class="notxt">5 / 6</div>
+        <img src="images/Story5.png" style="width:90%">
+      </div>
+      <div class="slideshow fade">
+        <div class="notxt">6 / 6</div>
+        <img src="images/Story6.png" style="width:90%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)"><i class="bi bi-caret-left-fill"></i></a>
+      <a class="nxt" onclick="plusSlides(1)"><i class="bi bi-caret-right-fill"></i></a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+    <div id="phishing-def">
+      <h4> <b>What is Phishing? </b><button id="btn-speak1" class="btn-speak1"><i class="bi bi-volume-up"></i> </button>
+      </h4>
+      <p>Phishing is a type of <span>social engineering attack</span>. Social engineering attacks use psychological
+        manipulation to
+        trick a user into believing the interaction is with a trusted party. In the case of <span>phishing</span>, an
+        email is sent
+        containing either a link installing malware, to a fake website, or a fraudulent attachment. PDF's are the most common type of attachment found in a phishing email (<a class="external-lnk" href="https://www.tessian.com/research/spear-phishing-threat-landscape/">2021 Tessian Report</a>).
+        <span><a href="malware-topic.html">malware</a></span>. Whereas phishing encompasses
+        the broad approach of bulk emails sent to a series of contacts, <span>spear phishing</span> is personalised and
+        targets an individual or organisation. Although typically conducted via emails, phishing can also happen through
+        other communcation mediums like SMS messages (<span>Smishing</span>)
+      </p>
+    </div>
+    <br>
+    <br>
+    <div id="phishing-spot">
+      <h4> <b>How Can You Spot a Phishing Email? </b><button id="btn-speak2"><i class="bi bi-volume-up"></i></button>
+      </h4>
+      <p>Although phishing emails can be hard to detect, there are still some very common signs
+        which can indicate that an email is, in fact, not from a trusted organization;
+      <div><img class="phish-example" src="images/Phishing-example.png" alt="Example of a Phishing Attack"
+          padding="30px" height="550px" width="550px">
+      </div>
+      <div>
+        <ol>
+          <li><b>1. </b> Public email domain. A <span>domain name</span> is the address of a website and dictates the
+            organization from
+            which the email has come. An email ending in “@gmail.com” indicates that the email has come from a personal
+            account.</li>
+          <br>
+          <li><b>2. </b> Misspelt domain name. Domain names can be bought from a registrar and although they have to be
+            unique, minor
+            changes can make the address indistinguishable from the email being spoofed. For example,
+            microsofrtonline.com.</li>
+          <br>
+          <li><b>3. </b> Poorly written email. An email lacking official organisation logos or with conistently poor
+            spelling and grammar, may indicate more than a typo error.
+          </li> <br>
+          <li><b>4. </b> Suspicious links. </li> <br>
+          <li><b>5. </b> Sense of urgency. An email that expresses the importance of immediate action, may be attempting
+            to trick a user
+            into following through without thinking about legitamacy of the request.
+          </li>
+        </ol>
+      </div>
+      </p>
+    </div>
+    <br>
+    <br>
+
+    <div id="phishing-his">
+      <h4> <b>A History of Attacks</b></h4>
+      <div style="color:grey;"> <small>Last updated 07/04/2022 </small></div>
+      <br>
+      Phishing emails are increasingly being used and falling for one can have some large affects including loss of
+      data, loss of money and device infection. Financial services firms are the most targeted for Phishing emails (<a class="external-lnk" href="https://www.tessian.com/research/spear-phishing-threat-landscape/">2021 Tessian Report</a>).
+      <br>
+      <br>
+      <h5> <b>Most Recent</b></h5>
+      <table id="recent">
+        <tr>
+          <th> CVE/Target</th>
+          <th>Technical Details</th>
+          <th>Impact</th>
+        </tr>
+        <tr>
+          <td>2022 OpenSea Discord Channel</td>
+          <td> Bot made a fake announcement instilling sense of urgency for users
+            to click on a link with the opprotunity to win NFT's. The link instead lead to a phishing site.
+          </td>
+          <td> Over $18 Thousand</td>
+        </tr>
+        <tr>
+          <td>2022 Department of Defence</td>
+          <td>Phishers sent phishing emails to jet fuel vendors directing them to a spoofec General Services
+            Administration website.
+            The website requested login credentials which were used to divert payments to phisher controlled accounts.
+          </td>
+          <td>$23 Million</td>
+        </tr>
+        <tr>
+          <td>2022 Bored Ape Yacht Club (BAYC) Instagram page</td>
+          <td>Hackers breached official BAYC instagram account and shared link with followers. The link requested users
+            to connect
+            their MetaMask wallets which were then drained by the hackers. </td>
+          <td>Over $40 Million</td>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <h5><b>Highest Impact</b></h5>
+      <table id="impact">
+        <tr>
+          <th> CVE/Name</th>
+          <th>Technical Details</th>
+          <th>Impact</th>
+        </tr>
+        <tr>
+          <td>2013 - 2015 Facebook and Google</td>
+          <td>Phishing email with fake invoices sent to employees from a fake business set up by the phisher. </td>
+          <td>$100 Million</td>
+        </tr>
+        <tr>
+          <td>2016 Crelan Bank </td>
+          <td>Phisher compromised high-level executive's email and used this to intruct employees to
+            transfer money to an account controlled by the attacker. This attack is known as Business Email Compromise
+            (BEC).</td>
+          <td>$75.8 Million</td>
+        </tr>
+        <tr>
+          <td>2016 FACC</td>
+          <td>Business Email Compromise (BEC) attack where phisher posed as CEO and instructed employee in the
+            accounting department to transfer funds to
+            phisher controlled account. </td>
+          <td>$61 Million</td>
+        </tr>
+      </table>
+    </div>
+    <a href="https://cve.mitre.org/cve/search_cve_list.html">Information taken from CVE</a>
+    <br>
+    <br>
+    <div id="phishing-test">
+      <h4> <b>Test</b></h4>
+      <button type="button" id="start-button" class="w-50 btn btn-lg btn-primary"
+        onClick="location.href='phishing-test.html'">Start Test</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $("#btn-speak1").click(function () {
+        if ('speechSynthesis' in window) {
+          var msg = new SpeechSynthesisUtterance(document.querySelector('#phishing-def').textContent);
+          msg.rate = 0.9;
+          window.speechSynthesis.speak(msg);
+        } else {
+          alert("Your browser doesn't support text to speech")
+        }
+      });
+      $("#btn-speak2").click(function () {
+        if ('speechSynthesis' in window) {
+          var msg = new SpeechSynthesisUtterance(document.querySelector('#phishing-spot').textContent);
+          msg.rate = 0.9;
+          window.speechSynthesis.speak(msg);
+
+        } else {
+          alert("Your browser doesn't support text to speech")
+        }
+      });
+    });
+    window.onscroll = function () { myFunction() };
+    var sidebar = document.getElementById("sidebar");
+    var sticky = sidebar.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        sidebar.classList.add("sticky")
+      } else {
+        sidebar.classList.remove("sticky");
+      }
+    }
+    let slideIndex = 1;
+    slideshow(slideIndex);
+
+    function plusSlides(n) {
+      slideshow(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      slideshow(slideIndex = n);
+    }
+
+    function slideshow(n) {
+      let i;
+      let slides = document.getElementsByClassName("slideshow");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+  </script>
+</body>
+
+</html>
