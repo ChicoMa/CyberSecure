@@ -15,9 +15,9 @@ var questions = [{
       },
       {
         no: 3,
-        ques: "Which email feature does not indicate a potantial Phishing email?",
+        ques: "Which email feature does not indicate a potential Phishing email?",
         ans: "'Suspiciosly' perfect grammar",
-        opt: ["An email from Google ending in @google.com","Suspiciosly' perfect grammar",
+        opt: ["An email from Google ending in @google.com","'Suspiciosly' perfect grammar",
          "An urgent request for personal information", "An attached link that does not fit its defined purpose" ]
       },
         { 
